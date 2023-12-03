@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-image: url('https://images.pexels.com/photos/2166711/pexels-photo-2166711.jpeg?auto=compress&cs=tinysrgb&w=600');
+            background-size: cover; 
+            background-position: center;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .login-container {
+            background-color: none;
+            padding: 90px ;
+            border-radius: 5px;
+            box-shadow: 0 0 0px rgba(18, 250, 211, 0.904);
+            text-align: center;
+            transform: translateY(100vh);
+            animation: slide 0.5s forwards;
+            /* animation-delay: 0.5s; */
+        transition:background-color 1s,border-radius 1s,box-shadow 1s;
+        }
+
+        @keyframes slide {
+            100% { transform: translateY(0); }
+        }
+
+        .login-container:hover {
+            background-color: none;
+            padding: 90px ;
+            border-radius: 70%;
+            box-shadow: 0 0 40px rgba(18, 250, 211, 0.904);
+            text-align: center;
+            
+        }
+        .login-container img {
+            max-width: 100px;
+            margin-bottom: 20px;
+            box-shadow: 0 0 30px #26df16;
+        }
+
+        .login-container h2 {
+            margin: 0;
+        }
+
+        .input-group {
+            margin-top: 20px;
+        }
+
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+        }
+
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 10px;
+            border: 1px solid #ccc;
+            border-radius: 3px;
+        }
+
+        .input-group button {
+            background-color: #26df16;
+            color: #e70303;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        button{
+            background-color: #16b7df;
+            color: black;
+        }
+        p{
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="login-container">
+        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwe_6Nb9uEySDdtKZLlTYEh9NhicgH1nvQKQ&usqp=CAU" alt="Logo"> 
+        <h2>Login</h2>
+        <form action="#" method="POST"> 
+            <div class="input-group">
+                <label for="username">Username:</label>
+                <input type="text" id="username" name="username" required>
+            </div>
+            <div class="input-group">
+                <label for="password">Password:</label>
+                <input type="password" id="password" name="password" required>
+                <p><a href="www.google.com"> forget passwrod ?</a><p/>
+            </div>
+            <button type="submit">Login</button>
+        </form>
+    </div>
+</body>
+</html>
